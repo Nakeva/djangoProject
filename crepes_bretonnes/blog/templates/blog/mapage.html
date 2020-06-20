@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %} Ma page d'accueil {% endblock %}
+{% block content %}
+<h2>Bienvenue !</h2>
+    <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus
+       massa non tortor. Vestibulum diam diam, posuere in viverra in,
+       ullamcorper et libero. Donec eget libero quis risus congue imperdiet ac
+       id lectus. Nam euismod cursus arcu, et consequat libero ullamcorper sit
+       amet.
+        <!-- Ce commentaire HTML sera visible dans le code source. -->
+        {% comment %}
+    Ceci est une page d'exemple. Elle est composée de 3 tableaux :
+    - tableau des ventes
+    - locations
+    - retours en garantie
+        {% endcomment %}
+    </p>
+ {% load static %}
+<img src="{% static  'blog/im1.png' %}" alt="Mon image"/>
+{% endblock %}
+
+
+

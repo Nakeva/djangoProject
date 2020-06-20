@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/media/css/style.css">
+    <title>{% block title %}Mon blog sur les crepe bretonnes {% endblock %}</title>
+</head>
+<body>
+<header>Crepes bretonne</header>
+<nav>
+    {% block nav %}
+    <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/blog/">Blog</a> </li>
+        <li><a href="/contacts">Contacts</a></li>
+    </ul>
+    {% endblock %}
+</nav>
+<section id="content">
+    {% block content %} {% endblock %}
+</section>
+<footer> &copy; crepe bretonne </footer>
+</body>
+</html>
